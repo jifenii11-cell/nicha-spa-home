@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f32">
+<title>NICHA SPA | ระบบรวม</title>
+<style>
+:root{--green:#173f32;--green2:#245744;--gold:#c9a45c;--cream:#f7f4ec;--ink:#24352d;--muted:#718078}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Tahoma,"Noto Sans Thai",sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 10%,#e8efe7 0,transparent 32%),linear-gradient(135deg,#f8f6ef,#edf1e9)}
+header{background:linear-gradient(120deg,#123629,#245744);color:#fff;padding:42px 22px 68px;text-align:center;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff20;border-radius:50%;right:-90px;top:-210px;box-shadow:0 0 0 28px #ffffff08,0 0 0 58px #ffffff06}
+.brand{font-family:Georgia,serif;letter-spacing:4px;color:#e5c985;font-size:13px}
+h1{font-size:clamp(27px,5vw,42px);margin:12px 0 8px;font-weight:600}
+header p{margin:0;color:#e1e9e2;font-size:15px}
+main{max-width:1100px;margin:-34px auto 0;padding:0 22px 54px;position:relative}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:#fff;border:1px solid #e6e4d9;border-radius:20px;padding:26px 23px 23px;box-shadow:0 12px 35px #1c3a2810;display:flex;flex-direction:column;min-height:265px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 42px #1c3a2820}
+.number{width:42px;height:42px;border-radius:13px;background:#f4eddd;color:#9b7837;display:grid;place-items:center;font-family:Georgia,serif;font-size:18px}
+h2{font-size:20px;margin:20px 0 8px;color:var(--green)}
+.desc{font-size:14px;line-height:1.75;color:var(--muted);margin:0 0 22px;flex:1}
+a.open{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;background:var(--green);color:white;border-radius:12px;padding:13px 16px;font-weight:600;font-size:14px;transition:background .2s}
+a.open:hover{background:var(--green2)}
+a.open span{color:#e5c985;font-size:18px}
+footer{text-align:center;color:#8a948d;font-size:12px;padding:0 20px 28px}
+@media(max-width:800px){.grid{grid-template-columns:1fr;max-width:520px;margin:auto}.card{min-height:220px}header{padding-bottom:60px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">NICHA SPA</div>
+  <h1>ศูนย์รวมระบบจัดการร้าน</h1>
+  <p>เลือกเข้าสู่ระบบที่ต้องการใช้งานได้จากที่เดียว</p>
+</header>
+<main>
+  <section class="grid" aria-label="ระบบของ NICHA SPA">
+    <article class="card">
+      <div class="number">01</div>
+      <h2>ระบบจัดการร้าน</h2>
+      <p class="desc">จัดการหน้าร้าน รายการบริการ เตียง พนักงาน การรับลูกค้า การชำระเงิน และรายงานรายได้</p>
+      <a class="open" href="https://jifenii11-cell.github.io/nicha-spa-management/" target="_blank" rel="noopener noreferrer">เข้าสู่ระบบ <span>↗</span></a>
+    </article>
+    <article class="card">
+      <div class="number">02</div>
+      <h2>ศูนย์พนักงานนวด</h2>
+      <p class="desc">เข้าสู่หน้าศูนย์พนักงานสำหรับดูข้อมูลและใช้งานระบบที่เกี่ยวข้องกับพนักงานนวด</p>
+      <a class="open" href="https://jifenii11-cell.github.io/nicha-massage/StaffCenter.html" target="_blank" rel="noopener noreferrer">เข้าสู่ระบบ <span>↗</span></a>
+    </article>
+    <article class="card">
+      <div class="number">03</div>
+      <h2>ศูนย์พนักงาน CRM</h2>
+      <p class="desc">เข้าสู่ระบบ CRM สำหรับงานดูแลข้อมูลลูกค้าและการจัดการที่เกี่ยวข้อง</p>
+      <a class="open" href="https://jifenii11-cell.github.io/nicha-crm/staff-center.html" target="_blank" rel="noopener noreferrer">เข้าสู่ระบบ <span>↗</span></a>
+    </article>
+  </section>
+</main>
+<footer>ณิชา นวดเพื่อสุขภาพ · NICHA SPA</footer>
+</body>
+</html>
